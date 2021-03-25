@@ -1,0 +1,38 @@
+Link,SheetName,Description
+https://api.covid19india.org/csv/latest/raw_data1.csv,raw_data1,Till Apr 19th
+https://api.covid19india.org/csv/latest/raw_data2.csv,raw_data2,Apr 20th to Apr 26th
+https://api.covid19india.org/csv/latest/raw_data3.csv,raw_data3,Apr 27th to May 9th
+https://api.covid19india.org/csv/latest/raw_data4.csv,raw_data4,May 10th to May 23rd
+https://api.covid19india.org/csv/latest/raw_data5.csv,raw_data5,May 24th to Jun 4th
+https://api.covid19india.org/csv/latest/raw_data6.csv,raw_data6,Jun 05th to Jun 19th
+https://api.covid19india.org/csv/latest/raw_data7.csv,raw_data7,Jun 20th to Jun 30th
+https://api.covid19india.org/csv/latest/raw_data8.csv,raw_data8,Jul 01st to Jul 7th
+https://api.covid19india.org/csv/latest/raw_data9.csv,raw_data9,Jul 08th to Jul 13th
+https://api.covid19india.org/csv/latest/raw_data10.csv,raw_data10,Jul 14th to Jul 17th
+https://api.covid19india.org/csv/latest/raw_data11.csv,raw_data11,Jul 18th to Jul 22nd
+https://api.covid19india.org/csv/latest/raw_data12.csv,raw_data12,Jul 23th to Aug 06th
+https://api.covid19india.org/csv/latest/raw_data13.csv,raw_data13,Aug 07th to Aug 21st
+https://api.covid19india.org/csv/latest/raw_data14.csv,raw_data14,Aug 22nd to Sep 05th
+https://api.covid19india.org/csv/latest/raw_data15.csv,raw_data15,Sep 06th to Sep 21st
+https://api.covid19india.org/csv/latest/raw_data16.csv,raw_data16,Sep 22nd to Oct 08th
+https://api.covid19india.org/csv/latest/raw_data17.csv,raw_data17,Oct 09th to Oct 26th
+https://api.covid19india.org/csv/latest/raw_data18.csv,raw_data18,Oct 27th to Nov 12th
+https://api.covid19india.org/csv/latest/raw_data19.csv,raw_data19,Nov 13th to Nov 30th
+https://api.covid19india.org/csv/latest/raw_data20.csv,raw_data20,Dec 01st to Dec 19th
+https://api.covid19india.org/csv/latest/raw_data21.csv,raw_data21,Dec 20th to Jan 08th
+https://api.covid19india.org/csv/latest/raw_data22.csv,raw_data22,Jan 09th to Jan 31st
+https://api.covid19india.org/csv/latest/raw_data23.csv,raw_data23,Feb 01st to Feb 27st
+https://api.covid19india.org/csv/latest/raw_data24.csv,raw_data24,Feb 28th onwards
+https://api.covid19india.org/csv/latest/case_time_series.csv,case_time_series,"Time series of Confirmed, Recovered and Deceased cases in India"
+https://api.covid19india.org/csv/latest/state_wise.csv,state_wise,The latest State-wise situation
+https://api.covid19india.org/csv/latest/district_wise.csv,district_wise,The latest District-wise situation
+https://api.covid19india.org/csv/latest/state_wise_daily.csv,state_wise_daily,"Statewise timeseries of Confirmed, Recovered and Deceased numbers."
+https://api.covid19india.org/csv/latest/states.csv,states,"Statewise timeseries of Confirmed, Recovered and Deceased numbers in long format"
+https://api.covid19india.org/csv/latest/districts.csv,districts,"Districtwise timeseries of Confirmed, Recovered and Deceased numbers in long format"
+https://api.covid19india.org/csv/latest/statewise_tested_numbers_data.csv,statewise_tested_numbers_data,"Number of tests conducted in each state, ventilators ,hospital bed occupany reported in state bulletins"
+https://api.covid19india.org/csv/latest/tested_numbers_icmr_data.csv,tested_numbers_icmr_data,Number of tests reported by ICMR
+https://api.covid19india.org/csv/latest/icmr_labs_statewise.csv,icmr_labs_statewise,Number of Labs in each state as per ICMR
+https://api.covid19india.org/csv/latest/sources_list.csv,sources_list,List of sources that we are using.
+http://api.covid19india.org/csv/latest/icmr_rtpcr_tests_daily.csv,rtpcr_samples_collected,Number of RTPCR samples collected statewise in ICMR Application
+http://api.covid19india.org/csv/latest/vaccine_doses_statewise.csv,vaccine_doses_administered_statewise,Number of vaccine doses administered statewise
+http://api.covid19india.org/csv/latest/cowin_vaccine_data_statewise.csv,cowin_vaccine_data_statewise,Key data points from CoWin database
