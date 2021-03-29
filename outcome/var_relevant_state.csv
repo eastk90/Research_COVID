@@ -1,0 +1,37 @@
+"","state","total_num_icu_beds","total_num_ventilators","total_num_of_o2_beds","total_num_beds_normal_isolation","total_ppe","total_n95_masks","covid_enquiry_calls","number_of_containment_zones"
+"1","Andaman and Nicobar Islands",NA,NA,NA,1037,NA,NA,NA,NA
+"2","Andhra Pradesh",2680,330,NA,21254,NA,NA,NA,NA
+"3","Arunachal Pradesh",NA,NA,NA,NA,NA,NA,NA,NA
+"4","Assam",595,332,NA,3338,NA,NA,328637,NA
+"5","Bihar",116,50,NA,2344,153211.5,38837,NA,NA
+"6","Chandigarh",NA,NA,NA,NA,NA,NA,NA,NA
+"7","Chhattisgarh",522,922,NA,5515,57466,33670,NA,NA
+"8","Dadra and Nagar Haveli and Daman and Diu",NA,NA,NA,NA,NA,NA,NA,NA
+"9","Delhi",NA,496,NA,15475,NA,NA,NA,1488
+"10","Goa",NA,NA,NA,335,NA,NA,NA,NA
+"11","Gujarat",NA,29,NA,NA,NA,NA,NA,NA
+"12","Haryana",2103,1051,NA,34876,NA,NA,NA,NA
+"13","Himachal Pradesh",NA,NA,NA,NA,NA,NA,NA,NA
+"14","Jammu and Kashmir",284,NA,NA,3651,NA,NA,1912549676,NA
+"15","Jharkhand",239,NA,NA,2891,NA,NA,NA,NA
+"16","Karnataka",1162.5,564.5,NA,98826,NA,NA,NA,NA
+"17","Kerala",NA,NA,NA,NA,NA,NA,NA,NA
+"18","Ladakh",190,NA,NA,726,NA,NA,NA,NA
+"19","Lakshadweep",NA,NA,NA,NA,NA,NA,NA,2
+"20","Madhya Pradesh",865,592,NA,33514,NA,NA,NA,NA
+"21","Maharashtra",7235,3096,NA,40214,434815,675265,NA,NA
+"22","Manipur",NA,NA,NA,178,NA,NA,NA,NA
+"23","Meghalaya",29,20,NA,3813,256379,216086,NA,39.5
+"24","Mizoram",NA,NA,NA,NA,NA,NA,NA,NA
+"25","Nagaland",68,39,NA,385,33190,14900,10756,NA
+"26","Odisha",346,NA,NA,854466,NA,NA,160552,NA
+"27","Puducherry",111,207,NA,408,27983,19916,NA,NA
+"28","Punjab",408,207,NA,NA,800476,20210,NA,20
+"29","Rajasthan",NA,NA,NA,NA,NA,NA,NA,NA
+"30","Sikkim",NA,NA,NA,NA,NA,NA,NA,NA
+"31","Tamil Nadu",NA,3371,NA,29074,NA,NA,NA,NA
+"32","Telangana",4453,NA,8921.5,3767,NA,NA,NA,508.5
+"33","Tripura",NA,NA,NA,NA,NA,NA,NA,NA
+"34","Uttar Pradesh",NA,NA,NA,NA,NA,NA,79582,18510
+"35","Uttarakhand",498,189,NA,856,NA,NA,NA,112
+"36","West Bengal",1243,790,NA,12440,2498762,2581040,NA,NA

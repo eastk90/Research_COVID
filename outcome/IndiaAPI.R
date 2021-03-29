@@ -44,8 +44,40 @@ raw_data2 <- raw_data2[,reorder_idx]
 
 names(raw_data2) == names(raw_data3)
 
-raw_data <- rbind(raw_data1, raw_data2, raw_data3, raw_data4, raw_data5, raw_data6, 
-                  raw_data7, raw_data8, raw_data9, raw_data10, raw_data11, raw_data12,
-                  raw_data13, raw_data14, raw_data15, raw_data16, raw_data17, raw_data18, 
-                  raw_data19, raw_data20, raw_data21, raw_data22, raw_data23, raw_data24)
+raw_data_combined <- rbind(raw_data1, raw_data2, raw_data3, raw_data4, raw_data5, raw_data6,
+                           raw_data7, raw_data8, raw_data9, raw_data10, raw_data11, raw_data12,
+                           raw_data13, raw_data14, raw_data15, raw_data16, raw_data17, raw_data18,
+                           raw_data19, raw_data20, raw_data21, raw_data22, raw_data23, raw_data24)
+write.csv(raw_data_combined, "outcome/raw_data_combined.csv")
+
+#relevant variables in state level. For time series variable, median is used.
+var_relevant_state<-
+  statewise_tested_numbers_data %>% group_by(state) %>%
+  summarise(total_num_icu_beds=median(total_num_icu_beds, na.rm = TRUE),
+            total_num_ventilators=median(total_num_ventilators, na.rm = TRUE),
+            total_num_of_o2_beds=median(total_num_of_o2_beds, na.rm = TRUE),
+            total_num_beds_normal_isolation=median(total_num_beds_normal_isolation, na.rm = TRUE),
+            total_ppe=median(total_ppe, na.rm = TRUE),
+            total_n95_masks=median(total_n95_masks, na.rm = TRUE),
+            covid_enquiry_calls=median(covid_enquiry_calls, na.rm = TRUE),
+            number_of_containment_zones=median(number_of_containment_zones, na.rm = TRUE)
+            )
+
+vrs2 <- #Other relevant variables in state level.
+  cowin_vaccine_data_statewise %>% group_by(state) %>%
+  summarise(total_covaxin_administered=median(total_covaxin_administered, na.rm=TRUE),
+            total_covi_shield_administered=median(total_covi_shield_administered, na.rm=TRUE),
+            total_doses_administered=median(total_doses_administered, na.rm=TRUE)
+            )
+#update `var_relevant_state`
+var_relevant_state <- inner_join(var_relevant_state, vrs2, by="state")
+
+write.csv(var_relevant_state, "outcome/var_relevant_state.csv")
+#Idea : Using 'state_wise_daily.csv', ratio variables can be made, e.g.,
+#       median of icu beds/total confirmed by state.
+
+
+
+
+
 
