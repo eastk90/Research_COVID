@@ -53,7 +53,8 @@ write.csv(raw_data_combined, "outcome/raw_data_combined.csv")
 #relevant variables in state level. For time series variable, median is used.
 var_relevant_state<-
   statewise_tested_numbers_data %>% group_by(state) %>%
-  summarise(total_num_icu_beds=median(total_num_icu_beds, na.rm = TRUE),
+  summarise(total_tested=median(total_tested, na.rm = TRUE),
+            total_num_icu_beds=median(total_num_icu_beds, na.rm = TRUE),
             total_num_ventilators=median(total_num_ventilators, na.rm = TRUE),
             total_num_of_o2_beds=median(total_num_of_o2_beds, na.rm = TRUE),
             total_num_beds_normal_isolation=median(total_num_beds_normal_isolation, na.rm = TRUE),
