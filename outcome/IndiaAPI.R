@@ -78,7 +78,7 @@ write.csv(var_relevant_state, "outcome/var_relevant_state.csv")
 #       median of icu beds/total confirmed by state.
 
 
-
+View(var_relevant_state)
 
 
 
