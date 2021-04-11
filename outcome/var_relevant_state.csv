@@ -1,37 +1,38 @@
-"","state","total_tested","total_num_icu_beds","total_num_ventilators","total_num_of_o2_beds","total_num_beds_normal_isolation","total_ppe","total_n95_masks","covid_enquiry_calls","number_of_containment_zones","total_covaxin_administered","total_covi_shield_administered","total_doses_administered"
-"1","Andaman and Nicobar Islands",74653.5,NA,NA,NA,1037,NA,NA,NA,NA,0,3560,3846
-"2","Andhra Pradesh",5878135,2680,330,NA,21254,NA,NA,NA,NA,38015,327367,414038
-"3","Arunachal Pradesh",262135.5,NA,NA,NA,NA,NA,NA,NA,NA,34,17355,20421
-"4","Assam",3836259,595,332,NA,3338,NA,NA,328637,NA,10319,125009,142950
-"5","Bihar",7326335.5,116,50,NA,2344,153211.5,38837,NA,NA,24070,473258,529891
-"6","Chandigarh",74415,NA,NA,NA,NA,NA,NA,NA,NA,8,8781,9187
-"7","Chhattisgarh",1168578,522,922,NA,5515,57466,33670,NA,NA,151,314881,329628
-"8","Dadra and Nagar Haveli and Daman and Diu",39812,NA,NA,NA,NA,NA,NA,NA,NA,0,5569,5776
-"9","Delhi",3107676.5,NA,496,NA,15475,NA,NA,NA,1488,38030,203066,252843
-"10","Goa",260366,NA,NA,NA,335,NA,NA,NA,NA,1,14699,15040
-"11","Gujarat",4387045,NA,29,NA,NA,NA,NA,NA,NA,218356,572590,806425
-"12","Haryana",1893886,2103,1051,NA,34876,NA,NA,NA,NA,23808,169430,206032
-"13","Himachal Pradesh",299179,NA,NA,NA,NA,NA,NA,NA,NA,34,86386,90616
-"14","Jammu and Kashmir",1633248.5,284,NA,NA,3651,NA,NA,1912549676,NA,634,162403,166429
-"15","Jharkhand",2320493,239,NA,NA,2891,NA,NA,NA,NA,9959,230402,249047
-"16","Karnataka",4853640,1162.5,564.5,NA,98826,NA,NA,NA,NA,5607,499698,560044
-"17","Kerala",2743887,NA,NA,NA,NA,NA,NA,NA,NA,42079,341159,401317
-"18","Ladakh",26302,190,NA,NA,726,NA,NA,NA,NA,23,4261,4572
-"19","Lakshadweep",28642,NA,NA,NA,NA,NA,NA,NA,2,0,1623,1674
-"20","Madhya Pradesh",2011959,865,592,NA,33514,NA,NA,NA,NA,107696,490623,598328
-"21","Maharashtra",6622384,7235,3096,NA,40214,434815,675265,NA,NA,7323,779763,810906
-"22","Manipur",304487,NA,NA,NA,178,NA,NA,NA,NA,19,33283,34103
-"23","Meghalaya",142426,29,20,NA,3813,256379,216086,NA,39.5,6,23989,25231
-"24","Mizoram",76976,NA,NA,NA,NA,NA,NA,NA,NA,4,12910,14305
-"25","Nagaland",81109,68,39,NA,385,33190,14900,10756,NA,2,15774,18021
-"26","Odisha",3200852,346,NA,NA,854466,NA,NA,160552,NA,31367,349502,407988
-"27","Puducherry",209900,111,207,NA,408,27983,19916,NA,NA,0,7023,7433
-"28","Punjab",1826020.5,408,207,NA,NA,800476,20210,NA,20,85,103521,107749
-"29","Rajasthan",3104951,NA,NA,NA,NA,NA,NA,NA,NA,158765,575149,747482
-"30","Sikkim",51963,NA,NA,NA,NA,NA,NA,NA,NA,109,9872,10339
-"31","Tamil Nadu",7310586,NA,3371,NA,29074,NA,NA,NA,NA,3812,224583,234412
-"32","Telangana",4302828.5,4453,NA,8921.5,3767,NA,NA,NA,508.5,36703,223783,325420
-"33","Tripura",390178,NA,NA,NA,NA,NA,NA,NA,NA,28,72871,79660
-"34","Uttar Pradesh",10098896,NA,NA,NA,NA,NA,NA,79582,18510,182368,852572,1054867
-"35","Uttarakhand",706631.5,498,189,NA,856,NA,NA,NA,112,60,130609,135708
-"36","West Bengal",3161817.5,1243,790,NA,12440,2498762,2581040,NA,NA,23610,521057,563290
+"","state","total_tested","total_num_icu_beds","total_num_ventilators","total_num_of_o2_beds","total_num_beds_normal_isolation","total_ppe","total_n95_masks","covid_enquiry_calls","number_of_containment_zones","total_covaxin_administered","total_covi_shield_administered","total_doses_administered","hostpital_public","hospital_private","hospital_total","hospital_beds_public","hospital_beds_private","hospital_beds_total","icu_beds_public","icu_beds_private","icu_beds_total","ventilators_public","ventilators_private","ventilators_total"
+"1","Andaman and Nicobar Islands","83115",NA,NA,NA,"1037",NA,NA,NA,NA,"0","6029","7989","30","6","36","1075","219","1294","54","11","65","27","5","32"
+"2","Andhra Pradesh","6494099","2680","330",NA,"21254",NA,NA,NA,NA,"65196","470759","673767","258","670","928","23138","60092","83230","1157","3005","4162","578","1502","2080"
+"3","Arunachal Pradesh","285214",NA,NA,NA,NA,NA,NA,NA,NA,"54","25827","32865","218","20","238","2404","220","2624","120","11","131","60","6","66"
+"4","Assam","4376672.5","595","332",NA,"3338",NA,NA,"328637",NA,"24400","170976","223134","1226","503","1729","17142","7036","24178","857","352","1209","429","176","605"
+"5","Bihar","8253035.5","116","50",NA,"2344","153211.5","38837",NA,NA,"31175","528146","637549","1147","1887","3034","11664","19193","30857","583","960","1543","292","480","772"
+"6","Chandigarh","82586",NA,NA,NA,NA,NA,NA,NA,NA,"9","16873","18567","9","4","13","3756","1875","5631","188","94","282","94","47","141"
+"7","Chhattisgarh","1414068","522","922",NA,"5515","57466","33670",NA,NA,"371","376347","428473","214","182","396","9412","8018","17430","471","401","872","235","200","435"
+"8","Dadra and Nagar Haveli and Daman and Diu","39812",NA,NA,NA,NA,NA,NA,NA,NA,"0","7077","7061","35","27","62","1315","1229","2544","66","62","128","33","30","63"
+"9","Delhi","3549798",NA,"496",NA,"15475",NA,NA,NA,"1638","71286","296413","406431","109","67","176","24383","15072","39455","1219","754","1973","610","377","987"
+"10","Goa","274189",NA,NA,NA,"335",NA,NA,NA,NA,"1","19869","22620","43","22","65","3012","1572","4584","151","79","230","75","39","114"
+"11","Gujarat","4884336",NA,"29",NA,NA,NA,NA,NA,NA,"220042","601691","989319","438","970","1408","20172","44690","64862","1009","2234","3243","504","1117","1621"
+"12","Haryana","2130281","2103","1051",NA,"34876",NA,NA,NA,NA,"30352","188157","280175","668","1480","2148","11240","24901","36141","562","1245","1807","281","623","904"
+"13","Himachal Pradesh","322427",NA,NA,NA,NA,NA,NA,NA,NA,"38","100868","121420","801","235","1036","12399","3641","16040","620","182","802","310","91","401"
+"14","Jammu and Kashmir","1809502.5","284",NA,NA,"3651",NA,NA,"1912549676",NA,"836","221261","238073","143","14","157","7291","704","7995","365","35","400","182","18","200"
+"15","Jharkhand","2640471","239",NA,NA,"2891",NA,NA,NA,NA,"27397","262284","313438","555","809","1364","10784","15712","26496","539","786","1325","270","393","663"
+"16","Karnataka","5684540","1162.5","564.5",NA,"98826",NA,NA,NA,NA,"6374","604961","833025","2842","7842","10684","69721","192388","262109","3486","9619","13105","1743","4810","6553"
+"17","Kerala","3231057",NA,NA,NA,NA,NA,NA,NA,NA,"62561","426552","593333","1280","2062","3342","38004","61223","99227","1900","3061","4961","950","1531","2481"
+"18","Ladakh","26302","190",NA,NA,"726",NA,NA,NA,NA,"31","9373","10341",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"19","Lakshadweep","35923.5",NA,NA,NA,NA,NA,NA,NA,"2","4","1820","1931","9","4","13","300","126","426","15","6","21","8","3","11"
+"20","Madhya Pradesh","2320430","865","592",NA,"33514",NA,NA,NA,NA,"120373","524343","804378","465","506","971","31106","33833","64939","1555","1692","3247","778","846","1624"
+"21","Maharashtra","7324188","7235","3096",NA,"40214","434815","675265",NA,NA,"13184","1015181","1187023","711","2492","3203","51446","180293","231739","2572","9015","11587","1286","4507","5793"
+"22","Manipur","333718",NA,NA,NA,"178",NA,NA,NA,NA,"29","48273","50565","30","8","38","1427","363","1790","71","18","89","36","9","45"
+"23","Meghalaya","167265","29","20",NA,"3813","256379","216086",NA,"39.5","49","40067","43820","157","28","185","4457","787","5244","223","39","262","111","20","131"
+"24","Mizoram","85701",NA,NA,NA,NA,NA,NA,NA,NA,"4","21916","27554","90","23","113","1997","499","2496","100","25","125","50","12","62"
+"25","Nagaland","85584.5","68","39",NA,"385","33190","14900","10756",NA,"4","27179","32408","36","13","49","1880","681","2561","94","34","128","47","17","64"
+"26","Odisha","3619509","346",NA,NA,"854466",NA,NA,"160552",NA,"36845","403690","573826","1806","695","2501","18519","7131","25650","926","357","1283","463","178","641"
+"27","Puducherry","250582","111","207",NA,"408","27983","19916",NA,NA,"0","10049","11254","14","6","20","3569","1603","5172","178","80","258","89","40","129"
+"28","Punjab","2069214.5","408","207",NA,NA,"800476","20210",NA,"20","151","149048","181693","682","1638","2320","17933","43064","60997","897","2153","3050","448","1077","1525"
+"29","Rajasthan","3301463",NA,NA,NA,NA,NA,NA,NA,NA,"167373","622105","1010420","2850","2794","5644","47054","46122","93176","2353","2306","4659","1176","1153","2329"
+"30","Sikkim","52682",NA,NA,NA,NA,NA,NA,NA,NA,"128","17477","19112","33","8","41","1560","392","1952","78","20","98","39","10","49"
+"31","Tamil Nadu","8092990.5",NA,"3371",NA,"29074",NA,NA,NA,NA,"5222","279418","319966","1217","1222","2439","77532","77843","155375","3877","3892","7769","1938","1946","3884"
+"32","Telangana","4663521","4453",NA,"8921.5","3767",NA,NA,NA,"508.5","44096","247329","419089","863","3247","4110","20983","78936","99919","1049","3947","4996","525","1973","2498"
+"33","Tripura","405717.5",NA,NA,NA,NA,NA,NA,NA,NA,"30","88043","109091","156","8","164","4429","238","4667","221","12","233","111","6","117"
+"34","Uttar Pradesh","11549475",NA,NA,NA,NA,NA,NA,"79582","18510","206000","1075076","1668629","4635","12468","17103","76260","205142","281402","3813","10257","14070","1907","5129","7036"
+"35","Uttarakhand","795540.5","498","189",NA,"856",NA,NA,NA,"112","108","147990","168602","460","829","1289","8512","15331","23843","426","767","1193","213","383","596"
+"36","West Bengal","3544381.5","1243","790",NA,"12440","2544262","2678040",NA,NA,"109727","844155","1092729","1566","697","2263","78566","34969","113535","3928","1748","5676","1964","874","2838"
+"37","Assumption",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"No Assumption/from NHP","Number of private hospitals in each State/UT can be estimated based on specific percentage break-up of hospitals (as provided in NSS) and number of government hospitals (as provided in NHP) in that State/UT","Number of private hospitals at India level is equal to sum total of private hospitals across all States/UTs","No Assumption/from NHP","Number of private hospital beds in each State/UT can also be estimated by using the same percentage break-up as used to calculate the number of private hospitals, since the number of government hospital beds were available for each State/UT","Number of private hospital beds at India level is equal to sum total of private hospital beds across all States/Uts","ICU bed strength is at 5% of hospital bed strength","ICU bed strength is at 5% of hospital bed strength","ICU bed strength is at 5% of hospital bed strength","50% of ICU beds across both public and private sector, are equipped with ventilators.","50% of ICU beds across both public and private sector, are equipped with ventilators.","50% of ICU beds across both public and private sector, are equipped with ventilators."
