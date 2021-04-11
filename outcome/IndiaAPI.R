@@ -111,14 +111,21 @@ vrs2 <- #Other relevant variables in state level.
             total_covi_shield_administered=median(total_covi_shield_administered, na.rm=TRUE),
             total_doses_administered=median(total_doses_administered, na.rm=TRUE)
             )
+
+
+vrs3 <- #hospital capicity variables in state level.
+  read_csv("outcome/hospital_capacity.csv")
+
 #update `var_relevant_state`
 var_relevant_state <- inner_join(var_relevant_state, vrs2, by="state")
-
-write.csv(var_relevant_state, "outcome/var_relevant_state.csv")
-#Idea : Using 'state_wise_daily.csv', ratio variables can be made, e.g.,
-#       median of icu beds/total confirmed by state.
-
+var_relevant_state <- inner_join(var_relevant_state, vrs3, by="state")
 View(var_relevant_state)
 
+m <- match(names(var_relevant_state), names(vrs3))
+t(tail(vrs3,1))[m]
+var_relevant_state <- rbind(var_relevant_state, t(tail(vrs3,1))[m])
 
+write.csv(var_relevant_state, "outcome/var_relevant_state.csv")
 
+#Idea : Using 'state_wise_daily.csv', ratio variables can be made, e.g.,
+#       median of icu beds/total confirmed by state.
