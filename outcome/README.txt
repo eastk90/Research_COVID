@@ -17,6 +17,8 @@ hospital_capacity.csv : hospital capacities table from 'State-wise-estimates-of-
 			In the second row from the last, 'Dadra and Nagar Haveli and Daman and Diu' was added because other state-level datasets combined the two states.
 			The last row is assumptions for each variable.
 
+power_cal_results.docx : power calculation results.
+
 Updates
 04/04/2021
 -Goal : To update R code so that raw_data sets are loaded automatically without updating 'api.covid19india.org_24th_Mar_2021.csv' at all.
@@ -32,6 +34,7 @@ Updates
 
 -Goal : To select necessary columns from `raw_data_combined` and save them.
 'IndiaAPI.R' is updated and the new version of "outcome/raw_data_combined.csv" is saved.
+
 
 Updates
 04/10/2021

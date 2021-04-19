@@ -116,6 +116,3 @@ unique(district_wise$State)
 unique(district_wise$State_Code)
 unique(districts$State)
 #
-
-test1 <- read.csv("test.csv")
-
