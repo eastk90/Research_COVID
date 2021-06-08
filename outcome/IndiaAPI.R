@@ -27,10 +27,11 @@ links <- read.csv("outcome/api.covid19india.org_24th_Mar_2021.csv")
 #Make list of URL links for 'Raw Data'
 page <- read_html("https://api.covid19india.org")
 page_p <- page %>% html_nodes("table") %>%  html_text() #save html text in the node "table" into `page_p`
-page_p <- page_p[3] #save only the 4th string.
+page_p <- page_p[1] #save only the 4th string.
 page_split <- str_split(page_p, " | ")[[1]] #split the string by a pattern " | "
 index <- page_split %>% str_detect("csv$") #find urls using that urls ends with ".csv"
 raw_data_links <- page_split[index]
+#raw_data_links <- raw_data_links %>% str_remove("\n")
 
 links_rawdata <- data.frame(str_match(raw_data_links, "https://api.covid19india.org/csv/latest/\\s*(.*?)\\s*.csv"))
 names(links_rawdata) <- c("Link", "SheetName")
