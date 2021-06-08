@@ -1,0 +1,21 @@
+The final output files are 'data_dist.csv' and 'data_state.csv'. 
+
+They were generated from 'census2011.R'.
+To run the code, the following files are needed.
+'3. census 2011/census2011_link.csv'
+'3. census 2011/Area_km2.csv'
+'3. census 2011/Area_km2_District.csv'
+'3. census 2011/census2011_religion_link.csv'
+
+
+In order to generate 'Area_km2_District.csv', 'distirct_link.csv' and 'Area_km2_District.R' were used.
+
+
+Telangana was separated from the northwestern part of Andhra Pradesh on 2 June 2014.
+In the Census 2011, we don't have a data of Telangana
+
+Ladakh was established on 31 October 2019.
+In the Census 2011, we don't have a data of Ladakh 
+
+Dadra & Nagar Haveli and Daman & Diu are two separate states in Census 2011. (Dadra & Nagar Haveli UT // Daman & Diu UT)
+I combined them into one state, Dadra and Nagar Haveli and Daman and Diu.

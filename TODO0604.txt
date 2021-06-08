@@ -1,0 +1,17 @@
+TODO :
+
+raw sheet 대신에 쓰는 data들이 up-do-date인지.
+
+1. raw sheet 에 있는 정보가 district.csv에 모두 있는지 체크.
+2. district.csv에 있는 정보가 district_wise.csv에 모두 있는지 체크.
+3. district_wise.csv 에 보면
+   'District-wise numbers are out-dated as cumulative counts for each district are not reported in bulletin'
+   라는 메세지가 보인다.
+   이 메세지를 갖는 distirct 가 어떤 애들인지 정확히 파악.
+
+4. state_wise_daily.csv 가 up to date 으로 보이네.
+   이 정보가 state_wise.csv에 모두 반영되어 있는지 체크하자.
+
+
+
+지금까지 모은 데이터셋 모두 예쁘게 정렬~
