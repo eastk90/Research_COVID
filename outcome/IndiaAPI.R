@@ -101,13 +101,14 @@ reorder_idx <- match(names(raw_data3), names(raw_data1))
 raw_data1 <- raw_data1[,reorder_idx]
 raw_data2 <- raw_data2[,reorder_idx]
 
-names(raw_data2) == names(raw_data3)
+all(names(raw_data2) == names(raw_data3))
 
 #Stack `raw_data{}` files and save it as 'raw_data_combined'
 raw_data_combined <- rbind(raw_data1, raw_data2, raw_data3, raw_data4, raw_data5, raw_data6,
                            raw_data7, raw_data8, raw_data9, raw_data10, raw_data11, raw_data12,
                            raw_data13, raw_data14, raw_data15, raw_data16, raw_data17, raw_data18,
-                           raw_data19, raw_data20, raw_data21, raw_data22, raw_data23, raw_data24)
+                           raw_data19, raw_data20, raw_data21, raw_data22, raw_data23, raw_data24,
+                           raw_data25, raw_data26, raw_data27, raw_data28, raw_data29) ### Need to update this code yet -----------------------
 names(raw_data_combined) # column names of `raw_data_combined`, but we need only some of them.
   ## select only necessary columns and save them.
 raw_data_combined <-
