@@ -7,7 +7,12 @@ states <- read_csv("outcome/downloads/states.csv")
 state_wise <- read_csv("outcome/downloads/state_wise.csv")
 state_wise_daily <- read_csv("outcome/downloads/state_wise_daily.csv")
 
+#View(raw_data_combined)
+raw_data_combined %>% filter(detected_state == "Telangana" ) %>% tail(100) %>% View()
 
+district_c11 <- read_csv("3. census 2011/data_dist.csv")
+lists <- read_csv("outcome/Indian-States-and-Districts-List.csv")
+#lists %>% group_by(District) %>% summarise(n = n()) %>% filter(n > 1)
 #------------------------------------------------------------------------------#
 #  Check 0.
 #------------------------------------------------------------------------------#
@@ -34,7 +39,7 @@ for (i in 1:nrow(multiple_dist)) {
 
 View(multiple_dist)
 
-#The following two state values(NA) are apparantely error.
+#The following two state values(NA) are apparently error.
 raw_data_combined %>% group_by(detected_district, detected_state) %>% summarise(n = n()) %>%
   filter(detected_district == "Amravati")
 
@@ -108,12 +113,12 @@ test[test[,2] == FALSE,]
 
 # "Raichur" : because of the last update added twice. -> district.csv > raw
 # "Nainital" : 
-district가 6이 더 큼.
+
 raw_data_combined %>% filter(detected_district == dist , current_status == "Recovered",
                              num_cases <7) %>% View()
 raw_data_combined %>% filter(detected_district == dist , current_status == "Recovered") %>% View()
 
--98
+
 #------------------------------------------------------------------------------#
 #  Check 2.
 #    -We saw that 'district.csv' is almost up-to-date even though it loses some districts.
@@ -185,7 +190,6 @@ all(districts %>% filter(District == dist) %>% tail(1) %>% .[,4:6] ==
       district_wise %>% filter(District == dist) %>% .[,c(5,7,8)] )
 
 multiple_dist
-#그다음에 ddw에 있는데 dd에는 없는 애들, 혹시 그 메세지 뜨는 애들 아닐까? 체크해보자.
 
 
 i <-5

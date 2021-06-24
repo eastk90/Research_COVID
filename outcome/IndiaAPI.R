@@ -35,7 +35,7 @@ raw_data_links <- page_split[index]
 
 links_rawdata <- data.frame(str_match(raw_data_links, "https://api.covid19india.org/csv/latest/\\s*(.*?)\\s*.csv"))
 names(links_rawdata) <- c("Link", "SheetName")
-links_rawdata
+head(links_rawdata)
  ##`links_rawdata` and `links` have the same structure except the column 'Description'
 
 
