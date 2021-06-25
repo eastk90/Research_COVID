@@ -11,7 +11,7 @@
 
 <meta name="author" content="East" />
 
-<meta name="date" content="2021-06-24" />
+<meta name="date" content="2021-06-25" />
 
 <title>datacheck2</title>
 
@@ -351,7 +351,7 @@ pre code {
 
 <h1 class="title toc-ignore">datacheck2</h1>
 <h4 class="author">East</h4>
-<h4 class="date">06/24/2021</h4>
+<h4 class="date">06/25/2021</h4>
 
 </div>
 
@@ -836,7 +836,7 @@ dr[!(dr %in% dc11)]</code></pre>
 ## [195] &quot;Paschim Bardhaman&quot;        &quot;Purba Bardhaman&quot;         
 ## [197] &quot;Purulia&quot;                  &quot;South 24 Parganas&quot;       
 ## [199] &quot;Unknown&quot;</code></pre>
-<p>From the lists above, we can see that several values are not actual districts, which are Airport Quarantine, Railway Quarantine, Others, Other State, Other Region, State Pool, Foreign Evacuees, Evacuees, Unassigned, Unknown, and NA. Also, I found that district names saved as Italians are error from the API github forum : <a href="https://github.com/covid19india/covid19india-react/issues/808" class="uri">https://github.com/covid19india/covid19india-react/issues/808</a>. Let’s assign a same values for them. Let’s call it ‘Other’.</p>
+<p>From the lists above, we can see that several values are not actual districts, which are Airport Quarantine, Railway Quarantine, Others, Other State, Other Region, State Pool, Foreign Evacuees, Evacuees, Unassigned, Unknown, and NA. Also, I found that district names saved as Italians are error from the API github forum : <a href="https://github.com/covid19india/covid19india-react/issues/808" class="uri">https://github.com/covid19india/covid19india-react/issues/808</a>. Let’s assign a same value for them. Let’s call it ‘Other’.</p>
 <pre class="r"><code>districts_other &lt;- c(&quot;Airport Quarantine&quot;, &quot;Railway Quarantine&quot;, &quot;Others&quot;, &quot;Other State&quot;, &quot;Other Region&quot;, &quot;State Pool&quot;, &quot;Foreign Evacuees&quot;, &quot;Evacuees&quot;, &quot;Italians&quot;,&quot;Unassigned&quot;, &quot;Unknown&quot;) #list of districts values to be assigned as &quot;Other&quot;.
 
 #raw_data_combined
@@ -1570,7 +1570,7 @@ districts %&gt;% filter(District ==&#39;Capital Complex&#39;) %&gt;% head(30) # 
 ##  9 2020-06-09 Arunachal P~ Capital Co~         0         0        0     0   1723
 ## 10 2020-06-10 Arunachal P~ Capital Co~         0         0        0     0   1723
 ## # ... with 20 more rows</code></pre>
-<p>Highlight districts that are missing across the datasets for all combinations of the three datasets. The full list of states and districts will be loaded and saved as <code>lists</code>. This is data is from <a href="https://www.askbankifsccode.com/blog/list-of-all-states-union-territories-and-districts-in-india/" class="uri">https://www.askbankifsccode.com/blog/list-of-all-states-union-territories-and-districts-in-india/</a> . First, I will make the duplicated district names unique as above.</p>
+<p>Highlight districts that are missing across the datasets for all combinations of the three datasets. The full list of states and districts will be loaded and saved as <code>lists</code>. This data is from <a href="https://www.askbankifsccode.com/blog/list-of-all-states-union-territories-and-districts-in-india/" class="uri">https://www.askbankifsccode.com/blog/list-of-all-states-union-territories-and-districts-in-india/</a> . First, I will make the duplicated district names unique as above.</p>
 <pre class="r"><code>lists &lt;- read_csv(here(&quot;outcome/Indian-States-and-Districts-List.csv&quot;))</code></pre>
 <pre><code>## 
 ## -- Column specification --------------------------------------------------------
@@ -1917,6 +1917,39 @@ raw_data_combined %&gt;% filter(detected_state == &quot;Goa&quot; &amp;
 
 raw_data_combined %&gt;% filter(detected_state == &quot;Telangana&quot;) %&gt;% View()
 raw_data_combined %&gt;% filter(detected_state == &quot;Telangana&quot; &amp;
+                               detected_district != &#39;Others&#39;) %&gt;% View()</code></pre>
+<p>For the list of districts in <code>B</code>, are they included in one of the states above(Andaman and Nicobar Islands, Delhi, Goa, or Telangana)? The districts in <code>B</code> are removed in <code>districts</code> because of their out-dated data? Not every district. They are inlcuded in one of the following states : (Andaman and Nicobar Islands, Delhi, Goa, Telangana, Assam, Manipur, or Sikkim)</p>
+<pre class="r"><code>B[!(B %in% c(lists$District, lists$District2))]</code></pre>
+<pre><code>## [1] &quot;Capf Personnel&quot;</code></pre>
+<pre class="r"><code>lists[lists$District %in% B | lists$District2 %in% B , ]</code></pre>
+<pre><code>## # A tibble: 95 x 4
+##    State           District             `State Type`    District2               
+##    &lt;chr&gt;           &lt;chr&gt;                &lt;chr&gt;           &lt;chr&gt;                   
+##  1 Andaman Nicobar North Middle Andaman Union Territory North And Middle Andaman
+##  2 Andaman Nicobar South Andaman        Union Territory &lt;NA&gt;                    
+##  3 Assam           Baksa                State           &lt;NA&gt;                    
+##  4 Assam           Barpeta              State           &lt;NA&gt;                    
+##  5 Assam           Biswanath            State           &lt;NA&gt;                    
+##  6 Assam           Bongaigaon           State           &lt;NA&gt;                    
+##  7 Assam           Cachar               State           &lt;NA&gt;                    
+##  8 Assam           Charaideo            State           &lt;NA&gt;                    
+##  9 Assam           Chirang              State           &lt;NA&gt;                    
+## 10 Assam           Darrang              State           &lt;NA&gt;                    
+## # ... with 85 more rows</code></pre>
+<pre class="r"><code>lists[lists$District %in% B | lists$District2 %in% B , ]$State %&gt;% unique()</code></pre>
+<pre><code>## [1] &quot;Andaman Nicobar&quot; &quot;Assam&quot;           &quot;Delhi&quot;           &quot;Goa&quot;            
+## [5] &quot;Manipur&quot;         &quot;Sikkim&quot;          &quot;Telangana&quot;</code></pre>
+<p>It looks like districts in Assam, Manipur, or Sikkim are excluded in <code>districts</code> for no reason.</p>
+<pre class="r"><code>raw_data_combined %&gt;% filter(detected_state == &quot;Assam&quot;) %&gt;% View()
+raw_data_combined %&gt;% filter(detected_state == &quot;Assam&quot; &amp;
+                               detected_district != &#39;Others&#39;) %&gt;% View()
+
+raw_data_combined %&gt;% filter(detected_state == &quot;Manipur&quot;) %&gt;% View()
+raw_data_combined %&gt;% filter(detected_state == &quot;Manipur&quot; &amp;
+                               detected_district != &#39;Others&#39;) %&gt;% View()
+
+raw_data_combined %&gt;% filter(detected_state == &quot;Assam&quot;) %&gt;% View()
+raw_data_combined %&gt;% filter(detected_state == &quot;Assam&quot; &amp;
                                detected_district != &#39;Others&#39;) %&gt;% View()</code></pre>
 </div>
 

@@ -110,7 +110,7 @@ dd[!(dd %in% dc11)]
 ddw[!(ddw %in% dc11)]
 ```
 
-From the lists above, we can see that several values are not actual districts, which are Airport Quarantine, Railway Quarantine, Others, Other State, Other Region, State Pool, Foreign Evacuees, Evacuees, Unassigned, Unknown, and NA. Also, I found that district names saved as Italians are error from the API github forum : https://github.com/covid19india/covid19india-react/issues/808. Let's assign a same values for them. Let's call it 'Other'.
+From the lists above, we can see that several values are not actual districts, which are Airport Quarantine, Railway Quarantine, Others, Other State, Other Region, State Pool, Foreign Evacuees, Evacuees, Unassigned, Unknown, and NA. Also, I found that district names saved as Italians are error from the API github forum : https://github.com/covid19india/covid19india-react/issues/808. Let's assign a same value for them. Let's call it 'Other'.
 
 ```{r}
 districts_other <- c("Airport Quarantine", "Railway Quarantine", "Others", "Other State", "Other Region", "State Pool", "Foreign Evacuees", "Evacuees", "Italians","Unassigned", "Unknown") #list of districts values to be assigned as "Other".
@@ -377,7 +377,7 @@ districts %>% filter(District =='Capital Complex') %>% head(30) # No COVID cases
 
 
 
- Highlight districts that are missing across the datasets for all combinations of the three datasets. The full list of states and districts will be loaded and saved as `lists`. This is data is from https://www.askbankifsccode.com/blog/list-of-all-states-union-territories-and-districts-in-india/ . First, I will make the duplicated district names unique as above.
+ Highlight districts that are missing across the datasets for all combinations of the three datasets. The full list of states and districts will be loaded and saved as `lists`. This data is from https://www.askbankifsccode.com/blog/list-of-all-states-union-territories-and-districts-in-india/ . First, I will make the duplicated district names unique as above.
 
 ```{r}
 lists <- read_csv(here("outcome/Indian-States-and-Districts-List.csv"))
@@ -549,5 +549,28 @@ raw_data_combined %>% filter(detected_state == "Goa" &
 
 raw_data_combined %>% filter(detected_state == "Telangana") %>% View()
 raw_data_combined %>% filter(detected_state == "Telangana" &
+                               detected_district != 'Others') %>% View()
+```
+
+For the list of districts in `B`, are they included in one of the states above(Andaman and Nicobar Islands, Delhi, Goa, or Telangana)? The districts in `B` are removed in `districts` because of their out-dated data? Not every district. They are inlcuded in one of the following states : (Andaman and Nicobar Islands, Delhi, Goa, Telangana, Assam, Manipur, or Sikkim)
+```{r}
+B[!(B %in% c(lists$District, lists$District2))]
+lists[lists$District %in% B | lists$District2 %in% B , ]
+lists[lists$District %in% B | lists$District2 %in% B , ]$State %>% unique()
+```
+
+It looks like districts in Assam, Manipur, or Sikkim are excluded in `districts` for no reason.
+
+```{r, eval = F}
+raw_data_combined %>% filter(detected_state == "Assam") %>% View()
+raw_data_combined %>% filter(detected_state == "Assam" &
+                               detected_district != 'Others') %>% View()
+
+raw_data_combined %>% filter(detected_state == "Manipur") %>% View()
+raw_data_combined %>% filter(detected_state == "Manipur" &
+                               detected_district != 'Others') %>% View()
+
+raw_data_combined %>% filter(detected_state == "Assam") %>% View()
+raw_data_combined %>% filter(detected_state == "Assam" &
                                detected_district != 'Others') %>% View()
 ```
